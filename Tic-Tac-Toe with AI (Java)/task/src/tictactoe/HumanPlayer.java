@@ -2,11 +2,12 @@ package tictactoe;
 
 import java.util.Scanner;
 
-public class HumanPlayer extends Player {
+public class HumanPlayer implements Player {
     private final Scanner scanner = new Scanner(System.in);
+    private final char symbol;
 
     public HumanPlayer(char symbol) {
-        super(symbol);
+        this.symbol = symbol;
     }
 
     @Override

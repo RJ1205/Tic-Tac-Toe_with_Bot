@@ -2,11 +2,12 @@ package tictactoe;
 
 import java.util.Random;
 
-public class MediumAIPlayer extends Player {
+public class MediumAIPlayer implements Player {
     private final Random random = new Random();
+    private final char symbol;
 
     public MediumAIPlayer(char symbol) {
-        super(symbol);
+        this.symbol = symbol;
     }
 
     @Override

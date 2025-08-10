@@ -1,9 +1,10 @@
 package tictactoe;
 
-public class HardAIPlayer extends Player {
+public class HardAIPlayer implements Player {
+    private final char symbol;
 
     public HardAIPlayer(char symbol) {
-        super(symbol);
+        this.symbol = symbol;
     }
 
     @Override
